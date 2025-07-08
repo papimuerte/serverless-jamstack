@@ -2,12 +2,12 @@ packages:
   - name: cloud
     actions:
       - name: getCoffee
-        runtime: nodejs 18
+        runtime: nodejs:18
         limits:
           timeout: 5000
           memory: 256
       - name: postEmail
-        runtime: nodejs 18
+        runtime: nodejs:18
         limits:
           timeout: 5000
           memory: 256
