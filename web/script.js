@@ -73,7 +73,7 @@ const cartHandler = function() {
 let subscribeButton = document.getElementById("subscribe");
 const subscribeHandler = async function() {
   let email = document.getElementById("email").value
-  let emailUrl = "https://hammerhead-app-2-ifexq.ondigitalocean.app/api/cloud/postEmail" + "?email=" + email;
+  let emailUrl = "https://faas-sfo3-7872a1dd.doserverless.co/api/v1/web/fn-0cdf6ca7-2c59-4d26-8347-564a20d558af/cloud/postEmail" + "?email=" + email;
   await axios.post(emailUrl);
   localStorage.setItem("subscribe", email);
   document.getElementById("email").value = '';
