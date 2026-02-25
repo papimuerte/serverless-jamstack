@@ -1,7 +1,7 @@
 //start of get request to retrieve available coffees
 
 const getInventory = async () => {
-  let results = await axios.get('https://hammerhead-app-2-ifexq.ondigitalocean.app/api/cloud/getCoffee');
+  let results = await axios.get('https://faas-sfo3-7872a1dd.doserverless.co/api/v1/web/fn-0cdf6ca7-2c59-4d26-8347-564a20d558af/cloud/getCoffee');
 results.data.forEach(item => {
   let pic = item.pic;
   let name = item.name;
